@@ -4,7 +4,7 @@
 
 body {
     color: var(--maincolor);
-    font-family:'Times New Roman', Times, serif
+    font-family:'Times New Roman', Times, serif;
 }
 
 
@@ -66,4 +66,20 @@ h4 {
   flex: 1;
   padding-inline: 5px;
   word-wrap: break-word;
+}
+
+a:link, a:visited{
+    color: var(--maincolor);
+    text-decoration: none;
+}
+
+a:hover {
+    color:var(--maincolor);
+    text-decoration:none;
+    text-decoration:underline;
+}
+
+a:active {
+    color: var(--maincolor);
+    text-decoration: none;
 }
