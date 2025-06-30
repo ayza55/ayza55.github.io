@@ -12,7 +12,7 @@ layout: null
   <title>{{ page.title }}</title>
 </head>
 
-<body>
+<body onload = "myFunction()">
 
 <div class = 'mainpaper'>
 <!-- start main paper -->
@@ -32,14 +32,14 @@ layout: null
   </span>
 </div>
 
- <body  onload="myFunction()">    
+ 
     <script>
 function myFunction() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
 }
     </script>
-    </body>
+
   </div>
  </div>
  <hr style = 'height:3px'>

@@ -109,10 +109,8 @@ a:active {
   z-index: 1;
   top: 125%;
   left: -125px;
-  top: 25px;
   margin-left: 80px;
 }
-
 
 /* Toggle this class - hide and show the popup */
 .popup .show {
@@ -120,3 +118,5 @@ a:active {
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
+
+
