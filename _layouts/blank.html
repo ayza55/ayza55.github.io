@@ -19,7 +19,28 @@ layout: null
   <div class = 'row'>
   <div class = 'column' style = 'text-align: left;'>Edition number: HINTS</div>
   <div class = 'column'style = 'text-align: center;'>Someday, Month 00 0000</div>
-  <div class = 'column'style = 'text-align: right;'>rules</div>
+  <div class = 'column'style = 'text-align: right;'>
+    <div class="popup" onclick="myFunction()">rules
+  <span class="popuptext" id="myPopup">
+<h4 style = "text-align: center;">RULES</h4>
+<br>
+1. DONT LOOK AT THE SOURCE CODE it is really really badly formatted and might give away the answers
+<br><br>
+2. You will most definitely need to google things
+<br><br>
+3. no ai (not that it would help)
+  </span>
+</div>
+
+ <body  onload="myFunction()">    
+    <script>
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+    </script>
+    </body>
+  </div>
  </div>
  <hr style = 'height:3px'>
  <hr style = 'margin-top: 5px;'>

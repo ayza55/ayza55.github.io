@@ -83,3 +83,40 @@ a:active {
     color: var(--maincolor);
     text-decoration: none;
 }
+
+/* popup stuff */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: rgba(198, 193, 176, 0.872);
+  color: var(--maincolor);
+  text-align: left;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: -125px;
+  top: 25px;
+  margin-left: 80px;
+}
+
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
