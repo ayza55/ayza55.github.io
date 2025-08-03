@@ -1,0 +1,107 @@
+---
+layout: blank
+---
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel = "stylesheet" href = "sitetestcs.css">
+  <title>"Hello"</title>
+</head>
+
+<body>
+
+
+<div class = 'mainpaper'>
+<!-- start main paper -->
+<h2>Claim Your Prize</h2>
+<hr>
+<div style = "text-align: center;">>>> answer in all-caps >>> good luck >>> </div>
+
+
+
+<div style="display: flex; justify-content: center; align-content: center;">
+  <input type="text" id="codeInput" placeholder="gimme gimme" />
+</div>
+<div style = "display:flex; justify-content: center;align-content: center;">
+  <br><br>
+    <button onclick="checkCode()">
+    <span class="default-text">enter</span>
+    <span class="hover-text">are you sure?</span>
+  </button>
+
+</div>
+
+  <div id="message"></div>
+
+  <script>
+  let failMessages = [
+  "no. try again :)",
+  "haha skill issue",
+  "r u sure it's in all-caps king?",
+  "nope",
+  "hey so I wrote a hints page for a reason yk",
+  "also no",
+  "you might be able to beat qcaa math methods but you still can't beat me",
+  "insanely incorrect",
+  "bruh lock in",
+  "house md would never be this wrong",
+  "don't you have like, study to do or something",
+  "go do your anki",
+  "im serious, this is getting out of hand",
+  "cmon its like you're not even trying",
+  "no.",
+  "wrong",
+  "ooeeeeoooooeeeeoooooo",
+  "quoth the raven: 'you are so bad'",
+  "wronggggg",
+  "it might be time to do something productive",
+  "hint: if it's past 11pm, you're not gonna get it. sleep deprivation wins no wars",
+  "go drink water. you're still wrong",
+  "nope.",
+  "nuh uh",
+  "if you shout me boba i might give you a hint",
+  "i'll have a large qq passionfruit, less ice little sugar, WITH the passionfruit seeds thank you very much",
+  "haha no",
+  "are you about to crashout or something",
+];
+  let failIndex = 0;
+
+    function checkCode() {
+      const input = document.getElementById('codeInput').value.trim();
+      const correctCode = 'SECRET123'; // Change this to your actual code
+
+      const messageDiv = document.getElementById('message');
+
+      if (input === correctCode) {
+        messageDiv.textContent = 'Correct code! Access granted.';
+        messageDiv.style.color = 'green';
+        var myWindow = window.open("", "_self")
+      } else {
+
+      if (failMessages.length > 0) {
+              messageDiv.innerHTML = `<div class = "fail-message">${failMessages[failIndex]}</div>`;
+              failIndex = (failIndex + 1) % failMessages.length;
+            } else {
+              messageDiv.innerHTML = `<div class = "fail-message">${failMessages[failIndex]}</div>`;
+            }
+
+        // messageDiv.textContent = 'no. skill issue';
+        // messageDiv.style.color = 'red';
+        // messageDiv.style.textAlign = "center";
+      }
+    }
+  </script>
+
+
+
+<!-- end main paper -->
+</div>
+
+
+
+</body>
+
+</html>
+
